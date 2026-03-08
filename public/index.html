@@ -11,41 +11,47 @@
 </head>
 
 <body>
+    <header>
+        <div class="header-left">
+            <img src="../public/assets/876f53dc-7a68-4dd4-9218-34ee8208d19c.png" alt="App logo" width="80"
+                height="80" />
+            <div class="header-left--title">
+                <h1 class="heading2">Welcome back!</h1>
+                <p class="p">Start organizing your day, Turner.</p>
+            </div>
+        </div>
+        <div>
+            <ul class="header-right">
+                <li><button type="button"><span class="p">Mood</span><i data-lucide="meh"></i></button></li>
+                <li><button type="button"><i data-lucide="cloud-sun"></i></button></li>
+                <li><button type="button"><i data-lucide="user"></i></button></li>
+            </ul>
+        </div>
+    </header>
     <main id="app">
-        <header>
-            <div class="header-left">
-                <img src="../public/assets/876f53dc-7a68-4dd4-9218-34ee8208d19c.png" alt="App logo" width="80"
-                    height="80" />
-                <div class="header-left--title">
-                    <h1 class="heading2">Welcome back!</h1>
-                    <p class="p">Start organizing your day, Turner.</p>
+        <div class="main-columns">
+            <div class="column panel">
+                <div class="panel-header">
+                    <div>
+                        <h2 class="heading4 panel-heading">Ready for today?</h2>
+                        <p class="small panel-subheading">Plan your tasks and stay on track.</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="button--icon-left" type="button"><i data-lucide="plus"></i><span
+                                class="small">Add
+                                task</span></button>
+                        <button class="button--icon-only" type="button"><i data-lucide="ellipsis"></i></button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <ul class="header-right">
-                    <li><button type="button"><span class="p">Mood</span><i data-lucide="meh"></i></button></li>
-                    <li><button type="button"><i data-lucide="cloud-sun"></i></button></li>
-                    <li><button type="button"><i data-lucide="user"></i></button></li>
-                </ul>
+            <div class="column panel">
+                <h2 class="heading4 panel-heading">Suggested tasks</h2>
             </div>
-        </header>
+        </div>
     </main>
     <script>
         lucide.createIcons();
     </script>
-</body>
-
-</html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do Application</title>
-</head>
-
-<body>
-    <main id="app"></main>
 </body>
 
 </html>
