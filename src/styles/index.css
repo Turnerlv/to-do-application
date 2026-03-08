@@ -27,6 +27,11 @@ header {
     align-items: center;
 }
 
+.header-left img {
+    width: 80px;
+    height: 80px;
+}
+
 .header-left--title h1 {
     color: var(--text-primary);
 }
@@ -126,10 +131,13 @@ button {
     padding: 0.5rem 0.75rem 0.5rem 0.5rem;
     color: var(--interactive-primary);
     border-radius: 0.25rem;
-    display: flex;
     align-items: center;
     gap: 0.5rem;
     height: 2.625rem;
+}
+
+.panel .button--icon-left {
+    display: flex;
 }
 
 .button--icon-only {
@@ -148,6 +156,12 @@ button {
     height: 16px;
 }
 
+@media (max-width: 1024px) {
+    .panel .button--icon-left {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .main-columns {
         flex-direction: column;
@@ -155,5 +169,10 @@ button {
 
     .column {
         width: auto;
+    }
+
+    .header-left img {
+        width: 72px;
+        height: 72px;
     }
 }

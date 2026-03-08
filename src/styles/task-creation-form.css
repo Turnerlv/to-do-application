@@ -1,0 +1,107 @@
+    @import "./globals.css";
+
+    .task-modal {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: var(--surface-overlay);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .task-modal__content {
+        width: min(520px, 100%);
+        background: var(--surface-raised);
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        padding: 1.5rem;
+    }
+
+    .task-modal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .panel-heading {
+        color: var(--text-primary);
+    }
+
+    .task-modal__close {
+        border: none;
+        background: transparent;
+        font-size: var(--fs-h4);
+        line-height: 1;
+        cursor: pointer;
+        color: var(--text-secondary);
+    }
+
+    .task-form__group {
+        margin-bottom: 1rem;
+    }
+
+    .task-form--label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-secondary);
+    }
+
+    .task-form--input {
+        width: 100%;
+        padding: 0.6rem 0.75rem;
+        border: 1px solid var(--border-default);
+        border-radius: 8px;
+        font-size: var(--fs-base);
+        outline: none;
+        background: var(--surface-base);
+        color: var(--text-primary);
+    }
+
+    .task-form__input:focus {
+        border-color: var(--focus-ring);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring), transparent 70%);
+    }
+
+    .task-form__counter {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .task-form__counter-btn {
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--border-default);
+        background: var(--surface-elevated);
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: var(--fs-base);
+        color: var(--text-primary);
+    }
+
+    .task-form--input--counter {
+        text-align: center;
+    }
+
+    .task-form__actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+
+    .task-form__submit {
+        background: var(--interactive-primary);
+        color: var(--text-inverse);
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 8px;
+        font-size: var(--fs-base);
+        cursor: pointer;
+    }
+
+    .task-form__submit:hover {
+        background: var(--interactive-primary-hover);
+    }

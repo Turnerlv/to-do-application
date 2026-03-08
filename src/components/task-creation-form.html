@@ -1,0 +1,42 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Creation Form</title>
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/task-creation-form.css" />
+</head>
+<div class="task-modal" role="dialog" aria-modal="true" aria-labelledby="task-modal-title">
+    <div class="task-modal__content">
+        <header class="task-modal__header">
+            <h2 id="task-modal-title" class="heading4 panel-heading">New Task</h2>
+            <button class="task-modal__close" type="button" aria-label="Close modal">×</button>
+        </header>
+
+        <form class="task-form">
+            <div class="task-form__group">
+                <label class="small task-form--label" for="task-name">Task name</label>
+                <input class="task-form--input" type="text" id="task-name" name="taskName" placeholder="Enter task name"
+                    required />
+            </div>
+
+            <div class="task-form__group">
+                <label class="small task-form--label" for="task-duration">Duration (minutes)</label>
+                <div class="task-form__counter">
+                    <button class="task-form__counter-btn" type="button" aria-label="Decrease duration">−</button>
+                    <input class="task-form--input task-form--input--counter" type="number" id="task-duration"
+                        name="taskDuration" min="0" step="5" value="30" />
+                    <button class="task-form__counter-btn" type="button" aria-label="Increase duration">+</button>
+                </div>
+            </div>
+
+            <div class="task-form__group">
+                <label class="small task-form--label" for="task-due-date">Due date</label>
+                <input class="task-form--input" type="date" id="task-due-date" name="taskDueDate" />
+            </div>
+
+            <div class="task-form__actions">
+                <button class="task-form__submit" type="submit">Create task</button>
+            </div>
+        </form>
+    </div>
+</div>

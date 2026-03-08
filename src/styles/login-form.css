@@ -1,0 +1,85 @@
+@import "./globals.css";
+
+.login-modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: var(--surface-overlay);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.login-modal__content {
+    width: min(520px, 100%);
+    background: var(--surface-raised);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+}
+
+.login-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.panel-heading {
+    color: var(--text-primary);
+}
+
+.login-modal__close {
+    border: none;
+    background: transparent;
+    font-size: var(--fs-h4);
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.login-form__group {
+    margin-bottom: 1rem;
+}
+
+.login-form--label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.login-form--input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    outline: none;
+    background: var(--surface-base);
+    color: var(--text-primary);
+}
+
+.login-form--input:focus {
+    border-color: var(--focus-ring);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus-ring), transparent 70%);
+}
+
+.login-form__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.login-form__submit {
+    background: var(--interactive-primary);
+    color: var(--text-inverse);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    cursor: pointer;
+}
+
+.login-form__submit:hover {
+    background: var(--interactive-primary-hover);
+}
