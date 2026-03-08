@@ -1,0 +1,71 @@
+@import "./globals.css";
+
+body {
+    margin: 2rem;
+    background: var(--surface-base);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.header-left--title h1 {
+    color: var(--text-primary);
+}
+
+.header-left--title p {
+    color: var(--text-secondary);
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.header-right button {
+    background: var(--surface-raised);
+    border: solid var(--border-subtle) 1px;
+    padding: 0.75rem;
+    margin: 0;
+    font: inherit;
+    color: var(--interactive-primary);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0.25rem;
+}
+
+.header-right:first-child button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-right:first-child span {
+    line-height: 24px;
+    color: var(--text-secondary)
+}
+
+.header-right svg {
+    stroke-width: 2px;
+    /* padding: .25rem .25rem 0 .25rem; */
+}
