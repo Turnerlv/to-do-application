@@ -1,0 +1,27 @@
+@import "./globals.css";
+
+
+.task-list__item {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    border: solid var(--border-default) 1px;
+    background: var(--surface-elevated);
+}
+
+.task-list__item-btn {
+    background: transparent;
+    border: none;
+    color: var(--interactive-primary);
+    cursor: pointer;
+    width: 32px;
+}
+
+.task-list__item-btn svg {
+    padding: 0.25rem;
+    width: 24px;
+    height: 24px;
+}
