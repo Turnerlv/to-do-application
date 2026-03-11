@@ -2,6 +2,7 @@
 
 
 .task-list__item {
+    color: var(--text-primary);
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -18,6 +19,10 @@
     color: var(--interactive-primary);
     cursor: pointer;
     width: 32px;
+}
+
+.task-list_description {
+    color: var(--text-secondary);
 }
 
 .task-list__item-btn svg {

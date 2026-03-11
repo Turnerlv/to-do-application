@@ -1,0 +1,44 @@
+@import "./globals.css";
+
+
+.suggested-task-list__item {
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    border: solid var(--border-default) 1px;
+    background: var(--surface-elevated);
+}
+
+.suggested-task-list__recommendation {
+    color: var(--accent-700);
+    display: inline-flex;
+    align-items: center;
+}
+
+.suggested-task-list__recommendation svg {
+    width: 20px;
+    height: 20px;
+    padding-right: 0.25rem;
+}
+
+.suggested-task-list__description {
+    color: var(--text-secondary);
+}
+
+.suggested-task-list__item-btn {
+    background: transparent;
+    border: none;
+    color: var(--interactive-primary);
+    cursor: pointer;
+    width: 32px;
+}
+
+.suggested-task-list__item-btn svg {
+    padding: 0.25rem;
+    width: 24px;
+    height: 24px;
+}

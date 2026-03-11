@@ -1,0 +1,80 @@
+@import "./globals.css";
+
+.mood-modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: var(--surface-overlay);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.mood-modal__content {
+    width: min(520px, 100%);
+    background: var(--surface-raised);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+}
+
+.mood-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.panel-heading {
+    color: var(--text-primary);
+}
+
+.mood-modal__close {
+    border: none;
+    background: transparent;
+    font-size: var(--fs-h4);
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.mood-form__group {
+    margin-bottom: 1rem;
+}
+
+.mood-form--label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.mood-form--input {
+    width: 100%;
+    accent-color: var(--interactive-primary);
+    cursor: pointer;
+}
+
+.mood-form--input:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 4px;
+}
+
+.mood-form__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.mood-form__submit {
+    background: var(--interactive-primary);
+    color: var(--text-inverse);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: var(--fs-base);
+    cursor: pointer;
+}
+
+.mood-form__submit:hover {
+    background: var(--interactive-primary-hover);
+}

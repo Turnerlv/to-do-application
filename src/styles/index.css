@@ -114,8 +114,7 @@ button {
     color: var(--text-primary);
 }
 
-.panel-subheading,
-.task-list_description {
+.panel-subheading {
     color: var(--text-secondary);
 }
 
